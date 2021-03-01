@@ -1,0 +1,1 @@
+This project will be created using PHP, mySQL,Ajax,  HTML, and CSS. The goal of this project is that a user can create an account, login, and add notes. The user would be able to edit or delete their notes once logged in.  
