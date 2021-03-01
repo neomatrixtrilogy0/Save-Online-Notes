@@ -40,8 +40,43 @@
         <h1>Online Notes App</h1>
         <p>Your Notes with you wherever you go</p>
         <p>User Friendly and Safe!</p>
-        <button type="button" class="btn btn-lg green signup">Sign up - It's free</button>
+        <button type="button" class="btn btn-lg green signup" data-target="#signupModal" data-toggle="modal">Sign up - It's free</button>
     </div>
+
+    <form method="POST" id="signupform">
+        <div class="modal" id="signupModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal">&times;</button>
+                        <h4 id="myModalLabel">Sign up today and start using our Online Notes App</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="username" class="sr-only">Username:</label>
+                            <input class="form-control" type="text" name="username" placeholder="Username" maxlength="30" id="username">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="sr-only">Email:</label>
+                            <input class="form-control" type="email" name="email" placeholder="Email Address" maxlength="50" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="sr-only">Password:</label>
+                            <input class="form-control" type="password" name="password" placeholder="Choose a password" maxlength="30" id="password">
+                        </div>
+                        <div class="form-group">
+                            <label for="password2" class="sr-only">Confirm Password:</label>
+                            <input class="form-control" type="password" name="password2" placeholder="Confirm password" maxlength="30" id="password2">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <input type="submit" name="signup" id="signup" class="btn green" value="Sign Up">
+                        <button type="button" class="btn btn-default " data-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
 
     <!--Footer-->
     <div class="footer">
