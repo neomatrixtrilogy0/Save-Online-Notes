@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styling.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
     <title>Online Notes</title>
 </head>
 <body>
@@ -34,6 +34,21 @@
             </div>
         </div>
     </nav>
+
+    <!--JumboTron After the navbar-->
+    <div class="jumbotron" id="myContainer">
+        <h1>Online Notes App</h1>
+        <p>Your Notes with you wherever you go</p>
+        <p>User Friendly and Safe!</p>
+        <button type="button" class="btn btn-lg green signup">Sign up - It's free</button>
+    </div>
+
+    <!--Footer-->
+    <div class="footer">
+        <div class="container">
+            <p>Created by yours truly AT &copy; <?php $today = date("Y"); echo $today; ?></p>
+        </div>
+    </div>
 
    
     

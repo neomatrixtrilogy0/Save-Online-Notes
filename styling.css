@@ -1,11 +1,54 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 /*Background image*/
 body {
-    background: url("images/background.jpg") no-repeat center center;
+    font-family: Arvo, serif;
+    background: url("images/pen.jpg") center center no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
+
+/*Style Jumbotron*/
+/* .jumbotron {
+    background: none;
+    text-align: center;
+    letter-spacing: 2.7px;
+    margin-top: 150px;
+    padding: 10px;
+} */
+#myContainer {
+    background-color: transparent;
+    text-align: center;
+    letter-spacing: 2.7px;
+    margin-top: 150px;
+    padding: 10px;
+}
+/*Style Buttons */
+.signup {
+    margin-top: 50px;
+}
+.green {
+    background-color: rgba(114, 190, 35, .8);
+}
+.green:hover {
+    background-color: rgb(114, 190, 35);
+}
+
+/*Style footer */
+.footer {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    padding-top: 10px;
+
+}
+
 /*Navbar custom*/
-.navbar-custom {
+.navbar-custom, .footer {
     background-color: #62aacf;
     border-color: #499cc7;
     background-image: -webkit-gradient(linear, left 0%, left 100%, from(#89bfdb), to(#62aacf));
