@@ -70,7 +70,7 @@
                                 <input type="checkbox" name="rememberme" id="rememberme">
                                 Remember me
                             </label>
-                            <a class="pull-right" style="cursor: pointer;">Forgot Password?</a>
+                            <a class="pull-right" style="cursor: pointer;" data-dismiss="modal" data-target="#forgotpasswordModal" data-toggle="modal">Forgot Password?</a>
                         </div>
                         
                     </div>
@@ -78,7 +78,7 @@
                     <div class="modal-footer">
                         <input type="submit" name="login" id="login" class="btn green" value="Login">
                         <button type="button" class="btn btn-default " data-dismiss="modal">Cancel</button>
-                        <button type="button" class="btn btn-default pull-left" data-dismiss="modal" data-target="signupModal" data-toggle="modal">Register</button>
+                        <button type="button" class="btn btn-default pull-left" data-dismiss="modal" data-target="#signupModal" data-toggle="modal">Register</button>
                     </div>
                 </div>
             </div>
@@ -118,6 +118,36 @@
                     <div class="modal-footer">
                         <input type="submit" name="signup" id="signup" class="btn green" value="Sign Up">
                         <button type="button" class="btn btn-default " data-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <!--Forgot Password Form-->
+    <form method="POST" id="forgotpasswordform">
+        <div class="modal" id="forgotpasswordModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!--Modal Header-->
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal">&times;</button>
+                        <h4 id="myModalLabel">Forgot Password? Enter your email address:</h4>
+                    </div>
+                    <!--Modal Body-->
+                    <div class="modal-body">
+                         <!--Forgot password message from PHP Files-->
+                        <div id="forgotpasswordmessage"></div>
+                        <div class="form-group">
+                            <label for="forgotemail" class="sr-only">Email:</label>
+                            <input class="form-control" type="email" name="forgotemail" placeholder="Email" maxlength="50" id="forgotemail">
+                        </div>
+                    </div>
+                    <!--Modal Footer-->
+                    <div class="modal-footer">
+                        <input type="submit" name="forgotpassword" id="forgotpassword" class="btn green" value="Submit">
+                        <button type="button" class="btn btn-default " data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-default pull-left" data-dismiss="modal" data-target="signupModal" data-toggle="modal">Register</button>
                     </div>
                 </div>
             </div>
