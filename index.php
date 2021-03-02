@@ -48,10 +48,12 @@
         <div class="modal" id="loginModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
+                    <!--Modal Header-->
                     <div class="modal-header">
                         <button class="close" data-dismiss="modal">&times;</button>
                         <h4 id="myModalLabel">Login:</h4>
                     </div>
+                    <!--Modal Body-->
                     <div class="modal-body">
                          <!--Login message from PHP Files-->
                         <div id="loginmessage"></div>
@@ -63,10 +65,20 @@
                             <label for="loginpassword" class="sr-only">Password:</label>
                             <input class="form-control" type="password" name="loginpassword" placeholder="Password" maxlength="30" id="loginpassword">
                         </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="rememberme" id="rememberme">
+                                Remember me
+                            </label>
+                            <a class="pull-right" style="cursor: pointer;">Forgot Password?</a>
+                        </div>
+                        
                     </div>
+                    <!--Modal Footer-->
                     <div class="modal-footer">
-                        <input type="submit" name="signup" id="signup" class="btn green" value="Sign Up">
+                        <input type="submit" name="login" id="login" class="btn green" value="Login">
                         <button type="button" class="btn btn-default " data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-default pull-left" data-dismiss="modal" data-target="signupModal" data-toggle="modal">Register</button>
                     </div>
                 </div>
             </div>
