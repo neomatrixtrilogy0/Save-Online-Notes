@@ -7,7 +7,30 @@
     <link rel="stylesheet" href="styling.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
-    <title>Online Notes</title>
+    <title>My Notes</title>
+
+    <style>
+        #container{
+            margin-top: 120px;
+        }
+        #allNotes, #done, #notePad{
+            display: none;
+        }
+        .buttons {
+            margin-bottom: 20px;
+        }
+        textarea {
+            width: 100%;
+            max-width: 100%;
+            font-size: 16px;
+            line-height: 1.5em;
+            border-left-width: 20px;
+            border-color: #CA3DD9;
+            color: #CA3DD9;
+            background-color: #FBEFFF;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
     <!--Nav Bar-->
@@ -24,24 +47,36 @@
             </div>
             <div class="navbar-collapse collapse" id="navbarCollapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
+                    <li ><a href="#">Profile</a></li>
                     <li><a href="#">Help</a></li>
                     <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">My Notes</a></li>
+                    <li class="active"><a href="#">My Notes</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#loginModal" data-toggle="modal">Login</a></li>
+                <li><a href="#">Logged in as <b>username</b></a></li>
+                    <li><a href="#">Log Out</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!--JumboTron After the navbar-->
-    <div class="jumbotron" id="myContainer">
-        <h1>Online Notes App</h1>
-        <p>Your Notes with you wherever you go</p>
-        <p>User Friendly and Safe!</p>
-        <button type="button" class="btn btn-lg green signup" data-target="#signupModal" data-toggle="modal">Sign up - It's free</button>
+    <div class="container" id="container">
+        <div class="row">
+            <div class="col-md-offset-3 col-md-6">
+                <div class="buttons">
+                    <button id="addNote" type="button" class="btn btn-info btn-lg">Add Note</button>
+                    <button id="edit" type="button" class="btn btn-info btn-lg pull-right">Edit</button>
+                    <button id="done" type="button" class="btn green btn-lg pull-right">Done</button>
+                    <button id="allNotes" type="button" class="btn btn-info btn-lg">All Notes</button>
+                </div>
+                <div id="notePad">
+                    <textarea rows="10"></textarea>
+                </div>
+                <div id="notes" class="notes">
+                    <!--Ajax call to php file-->
+                </div>
+            </div>
+        </div>
     </div>
 
     <!--Login Form-->
