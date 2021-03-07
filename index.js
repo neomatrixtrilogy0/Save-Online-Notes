@@ -1,11 +1,11 @@
 //Ajax call for the sign up form
 //Once the form is submitted
-$("signupform").submit(function(event) {
+$("#signupform").submit(function(event) {
     //prevent default php processing 
     event.preventDefault();
 
     //collect user inputs
-    let datatopost = $(this).serializeArray();
+    var datatopost = $(this).serializeArray();
     console.log(datatopost);
 
     //send them to signup.php using AJAX
